@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>FORMULARIO</h1>
+        </div>
+        <form action="formulario.php" method="POST">
+            <div>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" placeholder="Apellidos">
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="terminos">Terminos y condiciones: </label>
+                <input type="checkbox" name="terminos[]" id="terminos" value="aceptar-terminos">
+            </div>
+            <div>
+                <select name="selector[]" id="selector" multiple>
+                    <option value="gato">gato</option>
+                    <option value="perro">perro</option>
+                    <option value="hamster">hamster</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
