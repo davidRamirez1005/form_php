@@ -39,39 +39,39 @@ function fecha_espanol_larga(){
 
 echo "<br>";
 
-function fecha_espanol_corta($fecha = ""){
+// function fecha_espanol_corta($fecha = ""){
 
-    if ($fecha == "") {
-        $fecha = date("d-m-y");
-    } else {
-        $fecha = date("d-m-y",strtotime($fecha));
-    }
-    $fecha = explode("-",$fecha);
+//     if ($fecha == "") {
+//         $fecha = date("d-m-y");
+//     } else {
+//         $fecha = date("d-m-y",strtotime($fecha));
+//     }
+//     $fecha = explode("-",$fecha);
 
-    $fecha_dia = $fecha[0];
-    $fecha_mes = $fecha[1];
-    $fecha_year = $fecha[2];
+//     $fecha_dia = $fecha[0];
+//     $fecha_mes = $fecha[1];
+//     $fecha_year = $fecha[2];
 
 
 
-    $meses_year = [
-        '01' => 'Enero',
-        '02' => 'Febrero',
-        '03' => 'Marzo',
-        '04' => 'Abril',
-        '05' => 'Mayo',
-        '06' => 'Junio',
-        '07' => 'Julio',
-        '08' => 'Agosto',
-        '09' => 'Septiembre',
-        '10' => 'Octubre',
-        '11' => 'Noviembre',
-        '12' => 'Diciembre'
-    ];
+//     $meses_year = [
+//         '01' => 'Enero',
+//         '02' => 'Febrero',
+//         '03' => 'Marzo',
+//         '04' => 'Abril',
+//         '05' => 'Mayo',
+//         '06' => 'Junio',
+//         '07' => 'Julio',
+//         '08' => 'Agosto',
+//         '09' => 'Septiembre',
+//         '10' => 'Octubre',
+//         '11' => 'Noviembre',
+//         '12' => 'Diciembre'
+//     ];
 
-    $fecha_final = $fecha_dia." de ".$meses_year[$fecha_mes]." de ".$fecha_year;
+//     $fecha_final = $fecha_dia." de ".$meses_year[$fecha_mes]." de ".$fecha_year;
 
-    return $fecha_final;
-}
+//     return $fecha_final;
+// }
 
 ?>

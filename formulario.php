@@ -14,6 +14,5 @@ inputs();
 echo "<br><br><br>";
 echo fecha_espanol_larga();
 echo "<br>";
-echo fecha_espanol_corta();
-
+// echo fecha_espanol_corta();
 ?>
